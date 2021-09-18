@@ -1,5 +1,5 @@
 # Group 43
-Group Name: TEAM_NAME
+Group Name: Backend Pandas
 
 [MVP Link](https://docs.google.com/document/d/1lMnlTkglzwnNsjSTJQsTue4xgrn5q6FmXao2WsGmVUc/edit?usp=sharing)
 
