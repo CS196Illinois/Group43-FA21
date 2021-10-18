@@ -1,0 +1,2 @@
+Scrapy: framework writtin in Python that is basically used to extract data using application programming interface. Therefore, we will use scrapy as the way to extract images
+on social media platform and put those images into an algorithm that detects whether the images contain nudity or hate speech.
