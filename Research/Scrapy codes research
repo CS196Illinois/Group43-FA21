@@ -1,0 +1,3 @@
+Use FilesPipeline to retain the image_urls field in a spider and goes into the image pipeline. 
+Use ITEM_PIPELINES = {'scrapy.pipelines.images.ImagesPipeline': 1}
+Use IMAGES_STORE = '/path/to/valid/dir'
