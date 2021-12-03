@@ -1,0 +1,29 @@
+import scrapy
+
+
+fetch("https://www.twitter.com")
+
+
+ITEM_PIPELINES = {'scrapy.pipelines.images.ImagesPipeline': 1}
+
+IMAGES_STORE = 'tmp/images'
+class NudityImages(scrapy.Spider):
+    name = 'nudes'
+    allowed_domains = ['www.twitter.com']
+    start_urls = ['https//www.twitter.com']
+    custom_settings= {
+        'FEED_URI' : 'tmp/nudes.csv'
+    }
+    def parse(self, response):
+        titles = response.css('img::attr(title)').extract()
+        images = response.css('img::attr(data-img)').extract()
+        for item in zip(titles, images):
+            scraped_info = {
+                'title' : item[0]
+                'image_urls' : [item[2]]
+            }
+
+            yield scraped_info
+
+
+
