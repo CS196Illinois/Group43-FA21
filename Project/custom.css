@@ -1,0 +1,18 @@
+.cover, .cover a, a .cover, .cover a.new {
+    background-color: #252525;
+    color: #252525;
+    text-shadow: none;
+}
+.cover:hover, .cover:active,
+.cover:hover .cover, .cover:active .cover {
+    color: white !important;
+}
+.cover:hover a, a:hover .cover,
+.cover:active a, a:active .cover {
+    color: lightblue !important;
+}
+.cover:hover .new, .cover .new:hover, .new:hover .cover,
+.cover:active .new, .cover .new:active, .new:active .cover {
+    color: #BA0000 !important;
+}
+   
