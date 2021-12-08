@@ -1,0 +1,18 @@
+.heise, .heise a, a .heise, .heise a.new {
+     background-color: #252525!important;
+     color: #252525!important;
+     text-shadow: none!important;
+ }
+ .heise:hover, .heise:active,
+ .heise:hover .heise, .heise:active .heise {
+     color: white !important;
+ }
+ .heise:hover a, a:hover .heise,
+ .heise:active a, a:active .heise {
+     color: lightblue !important;
+ }
+ .heise:hover .new, .heise .new:hover, .new:hover .heise,
+ .heise:active .new, .heise .new:active, .new:active .heise {
+     color: #BA0000 !important;
+ }
+ 
